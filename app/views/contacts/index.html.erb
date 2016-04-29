@@ -1,0 +1,12 @@
+
+<h1>Full Contacts List</h1>
+<ul>
+	<% @contacts.each do |contact| %>
+		<li>
+			<%= contact.name %> 
+			<%= contact.address %>
+		</li>
+	<% end %>	
+</ul>
+
+<%=link_to  "Create New Contact", "/contacts/new" %>
